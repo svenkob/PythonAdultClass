@@ -3,6 +3,6 @@
 
 x = 42
 y = 73
-
+print("test")
 if x < y:
     print('x < y: x is {} and y is {}'.format(x, y))
