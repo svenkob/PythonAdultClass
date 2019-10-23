@@ -7,3 +7,16 @@ print("test")
 
 if x < y:
     print('x < y: x is {} and y is {}'.format(x, y))
+
+
+def x():
+    print("x")
+    def y():
+        print("y")
+    y()
+
+x()
+
+def x():
+    x=100
+    x()

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # Copyright 2009-2017 BHG http://bw.org/
 import math as mymath
+
 a= 10
 b= "test"
 #string

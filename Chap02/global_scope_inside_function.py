@@ -1,15 +1,15 @@
 def GlobalScope():
     print(a)
 
-a = 1
-f()
+a = "Globalscope"
+GlobalScope()
 
 
 #Error
 def LocalScope():
-    a = 1
+    a = "Localscope"
 
-f()
+LocalScope()
 print(a)
 
 
@@ -19,26 +19,29 @@ print(a)
 #and its modification will not change a global variable with the same name.
 #its modification will not change a global variable with the same name.
 def f():
-    a = 1
+    a = 50
     print(a)
 
-a = 0
+a = 100
 f()
+print(a)
 
 #local variable modified before assignment.
 #in the function f() the identifier a becomes a local variable,
 #since the function contains the command which modifies the variable a.
 #The modifying instruction will never be executed,
 #but the interpreter won't check it. Therefore, when you try to print the variable a,
-you appeal to an uninitialized local variable.
+#you appeal to an uninitialized local variable.
 def f():
     print(a)
-    if False:
-        a = 0
 
-a = 1
+a = "Error Condition"
 f()
-print(a)
+
+def a():
+    def c():
+
+
 
 #global keyword
 #bad idea, use return inside
